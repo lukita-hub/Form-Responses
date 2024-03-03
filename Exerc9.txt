@@ -1,0 +1,27 @@
+Problem #1:
+To determine the structure of relation ABC, the sequence of commands would be:
+
+bq
+rel ABC
+di
+x
+
+Problem #2:
+To read the first and last records of relation XYZ, the sequence of commands would be:
+
+bq
+rel XYZ
+re f
+re l
+x
+
+Problem #3:
+To read key value 10 and the next 2 records of relation XYZ, the sequence of commands would be:
+
+bq
+rel XYZ
+key 10
+re k
+re n
+re n
+x
