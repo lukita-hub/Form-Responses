@@ -19,7 +19,8 @@ VALUES
 	(4, 'Andreia', 78),
 	(5, 'Jaqueline', 63),
 	(6, 'Marcela', 88);
-
+SELECT * FROM Students
+Grade | Min_Value | Max_Value
 --Inserting exampe data into Student table
 INSERT INTO Notes (Grade, Min_Value, Max_Values)
 VALUES
@@ -33,16 +34,7 @@ VALUES
 	(8, 70, 79),
 	(9, 80, 89),
 	(10, 90, 100);
-
--- Querying Students and Notes tables to generate report
-SELECT 	
-		CASE WHEN NT.Grade < 8 THEN NULL ELSE ST.Name  END Name,
-		NT.Grade,
-		ST.Value
-FROM Students ST
-INNER JOIN Notes NT on
-(ST.Value >= NT.Min_Value AND ST.Value < NT.Max_Value)
-ORDER BY NT.Grade DESC, ST.Name DESC
+SELECT * FROM Notes
 
 
 
